@@ -1,250 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gelephu Mindfulness City - Business Portal</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;500&display=swap');
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Invest in Gelephu Mindfulness City – a visionary urban development integrating sustainability, innovation, and purpose." />
+  <title>Gelephu Mindfulness City | Ethical Investment Gateway</title>
 
-        :root {
-            --emerald: #014f43;
-            --light-pink: #fff7f9;
-            --deep-emerald: #013c34;
-            --white-glass: rgba(255, 255, 255, 0.5);
-            --text: #1e2d2b;
-        }
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --emerald: #014f43;
+      --light-pink: #fff7f9;
+      --deep-emerald: #013c34;
+      --white-glass: rgba(255, 255, 255, 0.5);
+      --text: #1e2d2b;
+    }
 
-        body {
-            margin: 0;
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(to bottom, var(--light-pink), white);
-            color: var(--text);
-            line-height: 1.7;
-            overflow-x: hidden;
-        }
+    * {
+      box-sizing: border-box;
+    }
 
-        header, footer {
-            color: var(--text);
-            text-align: center;
-            font-family: 'Playfair Display', serif;
-        }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, var(--light-pink), white);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
 
-        header {
-            background-image: url('https://www.visitbhutan.com/cms/images/9050Gelephu%20Mindfulness%20City%203%20%7C%20Visit%20Bhutan.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
-            box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.3);
-            padding: 4rem 2rem;
-            position: relative;
-        }
+    header {
+      background: url('https://www.visitbhutan.com/cms/images/9050Gelephu%20Mindfulness%20City%203%20%7C%20Visit%20Bhutan.jpg') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+      box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+      padding: 4rem 2rem;
+      position: relative;
+      text-align: center;
+    }
 
-        header h1 {
-            font-size: 4rem;
-            margin: 0;
-            animation: dropIn 1.2s ease-out forwards;
-            opacity: 0;
-            transform: translateY(-40px);
-        }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      margin: 0;
+      animation: dropIn 1.2s ease-out forwards;
+      opacity: 0;
+      transform: translateY(-40px);
+    }
 
-        header p {
-            font-size: 1.7rem;
-            margin-top: 1.5rem;
-            max-width: 800px;
-            animation: dropIn 1.6s ease-out forwards;
-            opacity: 0;
-            transform: translateY(-40px);
-        }
+    header p {
+      font-size: 1.5rem;
+      margin-top: 1.2rem;
+      max-width: 800px;
+      animation: dropIn 1.6s ease-out forwards;
+      opacity: 0;
+      transform: translateY(-40px);
+    }
 
-        @keyframes dropIn {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+    @keyframes dropIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-        @keyframes swoopInLeft {
-            0% { opacity: 0; transform: translateX(-60px); }
-            100% { opacity: 1; transform: translateX(0); }
-        }
+    @keyframes swoopInLeft {
+      from { opacity: 0; transform: translateX(-60px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
 
-        @keyframes swoopInRight {
-            0% { opacity: 0; transform: translateX(60px); }
-            100% { opacity: 1; transform: translateX(0); }
-        }
+    @keyframes swoopInRight {
+      from { opacity: 0; transform: translateX(60px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
 
-        main {
-            padding: 5rem 3rem;
-            max-width: 1100px;
-            margin: auto;
-        }
+    main {
+      padding: 5rem 3rem;
+      max-width: 1100px;
+      margin: auto;
+    }
 
-        section {
-            margin-bottom: 6rem;
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 1.2s ease-out;
-        }
+    section {
+      margin-bottom: 6rem;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1.2s ease-out;
+    }
 
-        section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
-        section:nth-of-type(odd).visible {
-            animation: swoopInLeft 1.2s ease-out;
-        }
+    section:nth-of-type(odd).visible {
+      animation: swoopInLeft 1.2s ease-out;
+    }
 
-        section:nth-of-type(even).visible {
-            animation: swoopInRight 1.2s ease-out;
-        }
+    section:nth-of-type(even).visible {
+      animation: swoopInRight 1.2s ease-out;
+    }
 
-        h2, h3 {
-            font-family: 'Playfair Display', serif;
-            color: var(--emerald);
-            font-size: 2.6rem;
-            margin-bottom: 1rem;
-        }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      color: var(--emerald);
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
 
-        .text-block {
-            font-size: 1.2rem;
-            line-height: 2;
-            margin-bottom: 1.5rem;
-        }
+    .text-block {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
 
-        .quote {
-            font-style: italic;
-            font-size: 1.4rem;
-            margin: 2rem 0;
-            padding-left: 2rem;
-            border-left: 4px solid var(--emerald);
-            color: var(--deep-emerald);
-        }
+    .quote {
+      font-style: italic;
+      font-size: 1.3rem;
+      margin: 2rem 0;
+      padding-left: 2rem;
+      border-left: 4px solid var(--emerald);
+      color: var(--deep-emerald);
+    }
 
-        .highlight {
-            font-weight: 700;
-            font-size: 1.3rem;
-            color: var(--emerald);
-        }
+    .highlight {
+      font-weight: 700;
+      color: var(--emerald);
+    }
 
-        .cta-buttons {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-            margin-top: 2.5rem;
-        }
+    .cta-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2.5rem;
+    }
 
-        .btn {
-            background-color: var(--emerald);
-            color: white;
-            text-decoration: none;
-            padding: 0.9rem 1.8rem;
-            border-radius: 2rem;
-            transition: background 0.3s ease;
-            font-weight: 500;
-            font-size: 1rem;
-        }
+    .btn {
+      background-color: var(--emerald);
+      color: white;
+      text-decoration: none;
+      padding: 0.9rem 1.8rem;
+      border-radius: 2rem;
+      transition: background 0.3s ease;
+      font-weight: 500;
+      font-size: 1rem;
+    }
 
-        .btn:hover {
-            background-color: var(--deep-emerald);
-        }
+    .btn:hover {
+      background-color: var(--deep-emerald);
+    }
 
-        #footer {
-            background-color: var(--white-glass);
-            color: var(--text);
-            padding: 2rem;
-            border-radius: 2rem;
-            text-align: center;
-            backdrop-filter: blur(8px);
-        }
+    .visual {
+      width: 100%;
+      border-radius: 2rem;
+      margin: 2rem 0;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
 
-        footer {
-            font-size: 0.85rem;
-            padding: 1rem 0 2rem;
-        }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
 
-        .visual {
-            width: 100%;
-            border-radius: 2rem;
-            margin: 2rem 0;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-        }
-    </style>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const sections = document.querySelectorAll("section");
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("visible");
-                    }
-                });
-            }, {
-                threshold: 0.2
-            });
-            sections.forEach(section => observer.observe(section));
+    ul li {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '•';
+      color: var(--emerald);
+      font-size: 1.5rem;
+      position: absolute;
+      left: 0;
+      top: 0.2rem;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll("section");
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
         });
-    </script>
+      }, {
+        threshold: 0.2
+      });
+      sections.forEach(section => observer.observe(section));
+    });
+  </script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Gelephu Mindfulness City</h1>
-        <p>Join a trillion dollar business rooted in mindfulness, sustainability, and purpose.</p>
-    </header>
-    <main>
-        <section>
-            <h2>Why Gelephu?</h2>
-            <img src="https://image.cnbcfm.com/api/v1/image/107369378-1707187726206-CRAFT_BRIDGE_EXTERIOR_by_BRICK_VISUAL.png?v=1707884076" class="visual" />
-            <div class="text-block">
-                Gelephu is more than a city—it is a paradigm shift. Designed from the ground up around the values of Gross National Happiness, it is Bhutan’s response to a future that demands balance between growth and well-being.
-            </div>
-            <div class="highlight">“In Gelephu, prosperity is measured not by skyscrapers, but by inner peace, equity, and harmony with nature.”</div>
-            <div class="text-block">
-                With its strategic location on the Indo-Bhutan border, the development of a new international airport, and planned railway connections with Northeast India, Gelephu positions investors at the center of an emerging market corridor, serving as a crucial land bridge between South and Southeast Asia. Over 5.5 million annual visitors are expected by 2065 (Statista, 2023)—offering scalable revenue streams across tourism, hospitality, logistics, and real estate.
-            </div>
-            <div class="text-block">
-                Bhutan’s political stability, transparent governance, and climate resilience (UNDP, 2023) make it an unparalleled location for long-term, ethical, and profitable investment.
-            </div>
-        </section>
+  <header>
+    <h1>Welcome to Gelephu Mindfulness City</h1>
+    <p>Invest in a trillion dollar business rooted in mindfulness, sustainability, and long-term prosperity.</p>
+  </header>
+  <main>
+    <section>
+      <h2> Investing in Gelephu: The Vision</h2>
+      <img src="https://image.cnbcfm.com/api/v1/image/107369378-1707187726206-CRAFT_BRIDGE_EXTERIOR_by_BRICK_VISUAL.png?v=1707884076" alt="Gelephu Bridge" class="visual" />
+      <div class="text-block">
+        Gelephu is not just a city—it is a new development model. Rooted in Bhutan’s Gross National Happiness framework, it champions balance between progress and wellbeing.
+      </div>
+      <div class="highlight">“In Gelephu, prosperity is measured not by skyscrapers, but by inner peace, equity, and harmony with nature.”</div>
+      <div class="text-block">
+        Located on the Indo-Bhutan border, Gelephu is positioned to become a major economic corridor. With a new international airport and planned rail links to Northeast India, it connects South and Southeast Asia. By 2065, it is projected to attract over 5.5 million annual visitors (Statista, 2023).
+      </div>
+      <div class="text-block">
+        Bhutan’s political stability, transparent governance, and robust climate policy (UNDP, 2023) strengthen its profile as a future-ready investment hub.
+      </div>
+    </section>
 
-        <section>
-            <h2>Investment Opportunities</h2>
-            <img src="https://basnetl.com/images/bagallery/original/punakha.webp" class="visual" />
-            <div class="text-block">
-                Investors are invited to lead in sectors aligned with global growth trends:
-                <br /><br />
-                <span class="highlight">Luxury Wellness Tourism:</span> Tap into a USD 991.7 billion global wellness market (2024), projected to reach USD 2,727.5 billion by 2034 at a 10.8% CAGR (InsightAce Analytic, 2024; GMInsights, 2024). Build luxury wellness retreats rooted in Bhutanese spiritual traditions, appealing to a rapidly growing segment seeking holistic well-being.
-                <br /><br />
-                <span class="highlight">Sustainable Real Estate:</span> Develop properties in eco-zones and high-value spiritual districts where demand will be driven by ethical investors and conscious travelers.
-                <br /><br />
-                <span class="highlight">Green Tech & Fintech:</span> Launch startups in renewable energy, digital assets, blockchain technology development, and circular economy solutions—all under an investor-friendly framework modeled after Singaporean and ADGM laws. Gelephu aims to be a leader in digital asset regulation, embracing financial innovation with robust safeguards.
-            </div>
-            <div class="quote">“Gelephu isn't just about financial returns. It's about legacy—building something that will uplift generations.”</div>
-        </section>
+    <section>
+      <h2>Investment Opportunities</h2>
+      <img src="https://basnetl.com/images/bagallery/original/punakha.webp" alt="Punakha Opportunity" class="visual" />
+      <div class="text-block">Lead innovation across high-growth sectors:</div>
+      <ul>
+        <li><span class="highlight">Wellness Tourism:</span> Join a <strong>USD 995.3 billion</strong> industry (2024), expected to reach <strong>USD 2.7 trillion</strong> by 2034 (InsightAce, GMInsights). Build retreats rooted in Bhutanese wisdom for global wellness seekers.</li>
+        <li><span class="highlight">Sustainable Real Estate:</span> Develop within eco-zones and mindful urban districts, designed for conscious living and legacy ownership.</li>
+        <li><span class="highlight">Green Tech & Fintech:</span> Drive innovation in renewables, blockchain, and circular economies, backed by regulatory systems inspired by Singapore and ADGM.</li>
+      </ul>
+      <div class="quote">“Gelephu isn't just about financial returns. It's about legacy—building something that uplifts generations.”</div>
+    </section>
 
-        <section>
-            <h2>Global Support, Local Spirit</h2>
-            <img src="https://www.bhutantravelog.com/media/1254/10gelephu-international-airport-artist-impression-big.jpg?width=1920&height=1280.625" class="visual" />
-            <div class="text-block">
-                With direct guidance from His Majesty the King, a leadership team comprising global experts in urban development, finance, and technology (including Mun Leong Liew, Joichi Ito, and Hobeng Lim), and design by global icons like BIG and Arup, Gelephu is a symbol of innovation, unity, and prosperity. Investors gain first-mover advantage in a Special Administrative Region (SAR) where taxation, company law, and financial services are governed by frameworks inspired by Singaporean and Abu Dhabi Global Market (ADGM) regulations, ensuring a streamlined and predictable environment. This unique legal autonomy, enacted through the Gelephu Mindfulness City Authority (GMCA)'s adoption of international best practices, provides unparalleled certainty for global capital.
-            </div>
-            <div class="highlight">Gelephu is more than an opportunity—it’s a movement.</div>
-            <div class="text-block">
-                The city’s DNA is global: foreign ownership laws, regulatory support, and high-tech infrastructure empower entrepreneurs and enterprise builders alike.
-            </div>
-            <div class="cta-buttons">
-                <a href="#" class="btn">Get Investment Pack</a>
-                <a href="#" class="btn">Book a Consultation</a>
-            </div>
-        </section>
-    </main>
+    <section>
+      <h2>Global Support, Local Spirit</h2>
+      <img src="https://www.bhutantravelog.com/media/1254/10gelephu-international-airport-artist-impression-big.jpg?width=1920&height=1280.625" alt="Gelephu International Airport Rendering" class="visual" />
+      <div class="text-block">
+        Guided by His Majesty the King and an international leadership team (including Mun Leong Liew, Joichi Ito, Hobeng Lim), Gelephu is built for global cooperation.
+      </div>
+      <div class="text-block">
+        Investors operate under the <strong>Application of Laws Act (2024)</strong>, aligning with Singaporean and ADGM frameworks. This ensures clarity in taxation, legal structure, and investment protections.
+      </div>
+      <div class="highlight">Gelephu is more than an investment—it’s a global legacy project.</div>
+      <div class="text-block">
+        Forward-thinking laws, digital-first infrastructure, and global ambition—Gelephu welcomes visionary builders.
+      </div>
+      <div class="cta-buttons">
+        <a href="#" class="btn">Download Investment Pack</a>
+        <a href="#" class="btn">Book a Consultation</a>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
